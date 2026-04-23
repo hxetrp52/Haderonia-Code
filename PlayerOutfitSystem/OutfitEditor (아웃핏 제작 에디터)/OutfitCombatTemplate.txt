@@ -1,0 +1,19 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class ##CLASSNAME##CombatData : OutfitCombatBase
+{
+    public override void Attack(InputAction.CallbackContext context)
+    {
+        if (!context.started) return;
+
+        Debug.Log("##OUTFITNAME## 공격");
+    }
+
+    public override void Skill(InputAction.CallbackContext context)
+    {
+        if (!context.started) return;
+
+        Debug.Log("##OUTFITNAME## 스킬");
+    }
+}
